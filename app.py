@@ -23,7 +23,7 @@ def read_image(uploaded_file):
     img = image.load_img(temp_file, target_size=(32, 32))
     x = image.img_to_array(img)
     x = np.expand_dims(x, axis=0)
-    x = x / 255.0
+   
     
     # Supprimer le fichier temporaire
     os.remove(temp_file)
